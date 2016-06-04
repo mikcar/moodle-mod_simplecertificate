@@ -1430,7 +1430,7 @@ class simplecertificate {
             if (strtoupper($key) == 'USERIMAGE' || strtoupper($key) == 'URL') {
                 $replace[] = $value;
             } else {
-                $replace[] = format_string((string)$value, true);
+                $replace[] = format_text((string)$value, $format=FORMAT_MOODLE);
             }
         }
         
